@@ -2689,15 +2689,15 @@ ul,
 ol {
   margin: 0 0 24px;
 }
-ul {
+.ul-style {
   padding-left: 17px;
   list-style: none;
 }
-ul li {
+.ul-style li {
   position: relative;
   margin-bottom: 11px;
 }
-ul li:after {
+.ul-style li:after {
   content: " ";
   display: block;
   height: 4px;
@@ -2707,9 +2707,69 @@ ul li:after {
   position: absolute;
   top: 9px;
   left: -17px;
+  z-index: 1;
 }
-ul li:last-child {
+.ul-style li:last-child {
   margin-bottom: 0;
+}
+.ul-style li > a {
+  text-decoration: none;
+}
+.ul-style li > a:hover {
+  color: #ea2f2f;
+}
+.ul-style li > a:hover:after {
+  content: " ";
+  display: block;
+  height: 4px;
+  width: 4px;
+  background: #ea2f2f;
+  border-radius: 100%;
+  position: absolute;
+  top: 9px;
+  left: -17px;
+  z-index: 2;
+}
+.ul-style-line {
+  padding-left: 17px;
+  list-style: none;
+}
+.ul-style-line li {
+  position: relative;
+  margin-bottom: 11px;
+}
+.ul-style-line li:after {
+  content: "-";
+  display: block;
+  height: 1px;
+  width: 4px;
+  background: #fff;
+  border-radius: 100%;
+  position: absolute;
+  top: 9px;
+  left: -17px;
+  z-index: 1;
+}
+.ul-style-line li:last-child {
+  margin-bottom: 0;
+}
+.ul-style-line li > a {
+  text-decoration: none;
+}
+.ul-style-line li > a:hover {
+  color: #f8d168;
+}
+.ul-style-line li > a:hover:after {
+  content: " ";
+  display: block;
+  height: 1px;
+  width: 4px;
+  background: #f8d168;
+  border-radius: 100%;
+  position: absolute;
+  top: 9px;
+  left: -17px;
+  z-index: 2;
 }
 .title-style {
   font-size: 32px;
@@ -2735,6 +2795,14 @@ ul li:last-child {
 }
 .row:after {
   clear: both;
+}
+.row0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+.row0 > * {
+  padding-left: 0;
+  padding-right: 0;
 }
 .col-xs-1,
 .col-sm-1,
@@ -3614,6 +3682,15 @@ ul li:last-child {
   color: #fff;
   font-size: 14px;
 }
+.main-header {
+  background: #fff;
+  z-index: 99;
+  position: fixed;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 .main-header-top {
   background: #181818;
   font-size: 14px;
@@ -3643,14 +3720,11 @@ ul li:last-child {
   padding: 0;
   overflow: hidden;
   float: left;
+  list-style: none;
 }
 .main-header-top-left li {
   float: left;
   margin-right: 29px;
-  margin-bottom: 0;
-}
-.main-header-top-left li:after {
-  display: none;
 }
 .main-header-top-nav {
   float: right;
@@ -3659,14 +3733,11 @@ ul li:last-child {
 .main-header-top-nav ul {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 .main-header-top-nav li {
   float: left;
-  margin-bottom: 0;
   margin-left: 47px;
-}
-.main-header-top-nav li:after {
-  display: none;
 }
 .main-header-top-nav a {
   text-decoration: none;
@@ -3693,14 +3764,11 @@ ul li:last-child {
 .main-nav > ul {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 .main-nav > ul > li {
   float: left;
   margin-right: 37px;
-  margin-bottom: 0;
-}
-.main-nav > ul > li:after {
-  display: none;
 }
 .main-nav > ul > li > a {
   font-size: 14px;
@@ -3742,6 +3810,9 @@ img {
   max-width: 100%;
   display: block;
   height: auto;
+}
+.main-content {
+  padding-top: 180px;
 }
 .top-page {
   background-size: 100% auto;
@@ -3835,14 +3906,11 @@ img {
   float: right;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 .social li {
   float: left;
   margin-left: 2px;
-  margin-bottom: 0;
-}
-.social li:after {
-  display: none;
 }
 .social a {
   display: block;
@@ -3918,4 +3986,7 @@ img {
 }
 .sidebar-block-search .title-style {
   margin-bottom: 21px;
+}
+.main-footer {
+  background-image: url(../images/footer.jpg);
 }
