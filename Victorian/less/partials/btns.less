@@ -1,0 +1,69 @@
+.btn-mixin(@btn-bg, @btn-color, @btn-border, @btn-bg-hover, @btn-color-hover, @btn-border-hover){
+    background: @btn-bg;
+    color: @btn-color;
+    border-color: @btn-border;
+    &:hover, &:focus {
+      background: @btn-bg-hover;
+      color: @btn-color-hover;
+      border-color: @btn-border-hover;
+    }
+}
+.btn {
+  font-family: 'Roboto';
+  display: inline-block;
+  padding: 9px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2857;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  .transition(0.2s);
+  outline: none !important;
+  .btn-mixin(@btn-bg-default, @btn-color-default, @btn-border-default, @btn-bg-hover-default, @btn-color-hover-default, @btn-border-hover-default);
+}
+.btn-circle {
+  letter-spacing: 0.7px;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.15);
+  border-radius: 28px;
+  padding: 16px 57px 17px;
+}
+
+.btn-primary {
+  .btn-mixin(@btn-bg-primary, @btn-color-primary, @btn-border-primary, @btn-bg-hover-primary, @btn-color-hover-primary, @btn-border-hover-primary);
+}
+
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  color: #fff;
+  text-decoration: none;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+}
