@@ -32,9 +32,16 @@
   background-image: -ms-linear-gradient( 90 - @gradient_angle , @gradient_color1, @gradient_color2 );
   background-image: linear-gradient(@gradient_angle, @gradient_color1, @gradient_color2 );
 }
+.gradient3(@gradient_angle: 90deg, @gradient_color1: rgb(255, 0, 0) 0%, @gradient_color2: rgb(255, 0, 0) 49%, @gradient_color3: rgb(0, 0, 0) 50%){
+  background-image: -moz-linear-gradient( 90 - @gradient_angle , @gradient_color1, @gradient_color2, @gradient_color3 );
+  background-image: -webkit-linear-gradient( 90 - @gradient_angle , @gradient_color1, @gradient_color2, @gradient_color3 );
+  background-image: -o-linear-gradient( 90 - @gradient_angle , @gradient_color1, @gradient_color2, @gradient_color3 );
+  background-image: -ms-linear-gradient( 90 - @gradient_angle , @gradient_color1, @gradient_color2, @gradient_color3 );
+  background-image: linear-gradient(@gradient_angle , @gradient_color1, @gradient_color2, @gradient_color3 );
+}
 .gradient4(@gradient_angle: 90deg, @gradient_color1: rgb(255, 0, 0) 0%, @gradient_color2: rgb(255, 0, 0) 49%, @gradient_color3: rgb(0, 0, 0) 50%, @gradient_color4: rgb(0, 0, 0) 100%){
 	background-image: -moz-linear-gradient( 90 - @gradient_angle , @gradient_color1, @gradient_color2, @gradient_color3, @gradient_color4 );
-	background-image: -webkit-linear-gradient( 90 - @gradient_angle , @gradient_color1, @gradient_color2 );
+	background-image: -webkit-linear-gradient( 90 - @gradient_angle , @gradient_color1, @gradient_color2, @gradient_color3, @gradient_color4 );
 	background-image: -o-linear-gradient( 90 - @gradient_angle , @gradient_color1, @gradient_color2, @gradient_color3, @gradient_color4 );
 	background-image: -ms-linear-gradient( 90 - @gradient_angle , @gradient_color1, @gradient_color2, @gradient_color3, @gradient_color4 );
 	background-image: linear-gradient(@gradient_angle , @gradient_color1, @gradient_color2, @gradient_color3, @gradient_color4 );
