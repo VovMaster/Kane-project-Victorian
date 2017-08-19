@@ -59,97 +59,58 @@
 		</div>
 	</div>
 </header>
-<section>
-	
-	<div class="top-page" style="background-image: url(images/checkout.jpg);">
-		<div class="top-page-container">
-			<div class="top-page-content">
-				<h1>Checkout</h1>
-			</div>
-		</div>
+<section class="slider fade slider-full-width">
+	<div>
+		<img src="images/slider-1.jpg" alt="">
 	</div>
-	<div class="top-page" style="background-image: url(images/about_us.jpg);">
-		<div class="top-page-container">
-			<div class="top-page-content">
-				<h1>About us</h1>
-				<p>Victorian Designer Floors is committed not only to bring you high quality products, but to running our business in the most socially and environmentally responsible way possible by supporting companies that support the environment. </p>
-			</div>
-		</div>
+	<div>
+		<img src="images/slider-2.jpg" alt="">
 	</div>
-	<div class="top-page top-page-lg" style="background-image: url(images/project_inner.jpg);">
-		<div class="top-page-container">
-			<div class="top-page-content">
-				<h1>Laminate floor <br> for cabinet</h1>
-				<p><a href="" class="btn btn-primary btn-circle">request a quote</a></p>
-			</div>
-		</div>
+	<div>
+		<img src="images/slider-3.jpg" alt="">
 	</div>
-
-
-	<div class="top-page" style="background-image: url(images/featured_project.jpg);">
-		<div class="top-page-container">
-			<div class="top-page-content">
-				<h1>Featured project</h1>
-				<p class="text-top-page"><a href="">87 Napoleon St., Eltham VIC 3095</a></p>
-				<p><a href="" class="btn btn-primary btn-circle">Learn more</a></p>
-			</div>
-		</div>
-	</div>
-	
-
-
-	<div class="top-page" style="background-image: url(images/quote.jpg);">
-		<div class="top-page-container">
-			<div class="top-page-content">
-				<h1>Get your free flooring Quote</h1>
-			</div>
-		</div>
-	</div>
-	
-
-
-	<div class="top-page" style="background-image: url(images/welcome.jpg);">
-		<div class="top-page-container">
-			<div class="top-page-content">
-				<h1>Welcome</h1>
-				<p class="text-top-page text-lg2">to Victorian Floors Account Application Form</p>
-			</div>
-		</div>
-	</div>
-	
-
-
-	<div class="top-page" style="background-image: url(images/shopping_cart.jpg);">
-		<div class="top-page-container">
-			<div class="top-page-content">
-				<h1>Shopping Cart</h1>
-			</div>
-		</div>
-	</div>
-	
-
-
-	<div class="top-page top-page-sm" style="background-image: url(images/blog_inner.jpg);">
-		<div class="top-page-container">
-			<div class="top-page-content">
-				<h1>How to care about <br> your new wooden floor?</h1>
-			</div>
-		</div>
-	</div>
-	
-
-
-	<div class="top-page" style="background-image: url(images/blog.jpg);">
-		<div class="top-page-container">
-			<div class="top-page-content">
-				<h1>Blog</h1>
-			</div>
-		</div>
-	</div>
-
-
-
-	
 </section>
+<section class="slider slider-for">
+	<div>
+		<img src="images/slider-image.jpg" alt="">
+	</div>
+	<div>
+		<img src="images/slider-image.jpg" alt="">
+	</div>
+</section>
+<section class="slider slider-nav">
+	<div>
+		<img src="images/slider-image-sm-1.jpg" alt="">
+	</div>
+	<div>
+		<img src="images/slider-image.jpg" alt="">
+	</div>
+</section>
+<script type="text/javascript">
+    $(document).on('ready', function() {
+      $('.fade').slick({
+		  dots: true,
+		  infinite: true,
+		  speed: 500,
+		  fade: true,
+		  cssEase: 'linear'
+		});
+       $('.slider-for').slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  arrows: false,
+		  fade: true,
+		  asNavFor: '.slider-nav'
+		});
+		$('.slider-nav').slick({
+		  slidesToShow: 3,
+		  slidesToScroll: 1,
+		  asNavFor: '.slider-for',
+		  dots: true,
+		  centerMode: true,
+		  focusOnSelect: true
+		});
+    });
+ </script>
 </body>
 </html>

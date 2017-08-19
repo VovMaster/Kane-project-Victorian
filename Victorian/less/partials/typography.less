@@ -23,6 +23,11 @@ body{
   font-weight: 300;
 }
 
+b,
+strong {
+  font-weight: 700;
+}
+
 h1,
 h2,
 h3,
@@ -80,17 +85,42 @@ h6,
 
 
 p, ul, ol {
-	margin: 0 0 30px;
+	margin: 0 0 24px;
+}
+ul {
+  padding-left: 17px;
+  list-style: none;
+  li {
+    position: relative;
+    margin-bottom: 11px;
+    &:after {
+      content: " ";
+      display: block;
+      height: 4px;
+      width: 4px;
+      background: #d3d3d3;
+      border-radius: 100%;
+      position: absolute;
+      top: 9px;
+      left: -17px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .title-style {
   font-size: 32px;
   letter-spacing: 0.8px;
   line-height: normal;
+  font-family: "Playfair Display",serif;
+  margin-bottom: 15px;
 }
 
 .title-primary {
   font-size: 48px;
   letter-spacing: 1.2px;
   line-height: normal;
+  font-family: "Playfair Display",serif;
 }
