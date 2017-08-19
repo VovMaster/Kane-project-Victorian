@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i|Roboto:300,300i,400,400i,700,700i" rel="stylesheet"> 
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="js/slick.min.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+	</head>
+<body>
+<header class="main-header">
+	<div class="main-header-top">
+		<div class="main-width">
+
+			<ul class="main-header-top-left">
+				<li>
+					<i class="fa fa-clock-o"></i> Mon - Sat | 7:00 - 17:00
+				</li>
+				<li>
+					<i class="fa fa-phone"></i> 1300 558 903
+				</li>
+			</ul>
+
+
+			<nav class="main-header-top-nav">
+				<ul>
+					<li><a href="">About us</a></li>
+					<li><a href="">How to Guide</a></li>
+					<li><a href="">Contact us</a></li>
+					<li><a href="">Builders Sign in / Join</a></li>
+				</ul>
+			</nav>
+
+			<div class="cart-dropdown">
+				<div class="title-cart-dropdown"><i class="fa fa-shopping-cart "></i> $0.00</div>
+			</div>
+	
+		</div>
+	</div>
+	<div class="main-header-bottom">
+		<div class="main-width">
+			<a class="logo" href="index.html">
+				<img src="images/logo.png">
+			</a>
+			<nav class="main-nav">
+				<ul>
+					<li><a href="">Explore Products <i class="fa fa-angle-down "></i></a></li>
+					<li><a href="">Gallery <i class="fa fa-angle-down "></i></a></li>
+					<li><a href="">Services <i class="fa fa-angle-down "></i></a></li>
+					<li><a href="">case studies</a></li>
+				</ul>
+			</nav>
+			<div class="main-header-btn">
+				<a href="" class="btn">Request a quote</a>
+			</div>
+		</div>
+	</div>
+</header>
+<section class="slider fade slider-full-width">
+	<div>
+		<img src="images/slider-1.jpg" alt="">
+	</div>
+	<div>
+		<img src="images/slider-2.jpg" alt="">
+	</div>
+	<div>
+		<img src="images/slider-3.jpg" alt="">
+	</div>
+</section>
+<section class="slider slider-for">
+	<div>
+		<img src="images/slider-image.jpg" alt="">
+	</div>
+	<div>
+		<img src="images/slider-image.jpg" alt="">
+	</div>
+</section>
+<section class="slider slider-nav">
+	<div>
+		<img src="images/slider-image-sm-1.jpg" alt="">
+	</div>
+	<div>
+		<img src="images/slider-image.jpg" alt="">
+	</div>
+</section>
+<script type="text/javascript">
+    $(document).on('ready', function() {
+      $('.fade').slick({
+		  dots: true,
+		  infinite: true,
+		  speed: 500,
+		  fade: true,
+		  cssEase: 'linear'
+		});
+       $('.slider-for').slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  arrows: false,
+		  fade: true,
+		  asNavFor: '.slider-nav'
+		});
+		$('.slider-nav').slick({
+		  slidesToShow: 3,
+		  slidesToScroll: 1,
+		  asNavFor: '.slider-for',
+		  dots: true,
+		  centerMode: true,
+		  focusOnSelect: true
+		});
+    });
+ </script>
+</body>
+</html>
