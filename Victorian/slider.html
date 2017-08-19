@@ -59,31 +59,103 @@
 		</div>
 	</div>
 </header>
-<section class="slider fade slider-full-width">
-	<div>
-		<img src="images/slider-1.jpg" alt="">
-	</div>
-	<div>
-		<img src="images/slider-2.jpg" alt="">
-	</div>
-	<div>
-		<img src="images/slider-3.jpg" alt="">
+<div class="main-content">
+	<section class="slider fade slider-full-width">
+		<div>
+			<img src="images/slider-1.jpg" alt="">
+		</div>
+		<div>
+			<img src="images/slider-2.jpg" alt="">
+		</div>
+		<div>
+			<img src="images/slider-3.jpg" alt="">
+		</div>
+		<div>
+			<img src="images/slider-1.jpg" alt="">
+		</div>
+		<div>
+			<img src="images/slider-2.jpg" alt="">
+		</div>
+	</section>
+	<section class="main-width">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="slider slider-for">
+					<div>
+						<img src="images/slider-image.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/slider-image.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/slider-image.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/slider-image.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/slider-image.jpg" alt="">
+					</div>
+				</div>
+				<div class="slider slider-nav">
+					<div>
+						<img src="images/slider-image-sm-1.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/slider-image-sm-1.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/slider-image-sm-1.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/slider-image-sm-1.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/slider-image-sm-1.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/slider-image-sm-1.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<section class="">
+	<img src="images/quote.png" alt="">
+	<div class="slider fade slider-quote">
+		<div>
+			<p>Sed odio orci, fringilla nec dolor et, euismod auctor mauris. Curabitur semper dui diam, nec accumsan mauris consequat sed. Interdum et malesuada fames acante. Sed odio orci, fringilla nec dolor et, euismod auctor mauris. Curabitur semper dui diam, nec accumsan mauris consequat sed. Interdum et malesuada fames acante.</p>
+		</div>
+		<div>
+			<p>Sed odio orci, fringilla nec dolor et, euismod auctor mauris. Curabitur semper dui diam, nec accumsan mauris consequat sed. Interdum et malesuada fames acante. Sed odio orci, fringilla nec dolor et, euismod auctor mauris. Curabitur semper dui diam, nec accumsan mauris consequat sed. Interdum et malesuada fames acante.</p>
+		</div>
+		<div>
+			<p>Sed odio orci, fringilla nec dolor et, euismod auctor mauris. Curabitur semper dui diam, nec accumsan mauris consequat sed. Interdum et malesuada fames acante. Sed odio orci, fringilla nec dolor et, euismod auctor mauris. Curabitur semper dui diam, nec accumsan mauris consequat sed. Interdum et malesuada fames acante.</p>
+		</div>
 	</div>
 </section>
-<section class="slider slider-for">
-	<div>
-		<img src="images/slider-image.jpg" alt="">
-	</div>
-	<div>
-		<img src="images/slider-image.jpg" alt="">
-	</div>
-</section>
-<section class="slider slider-nav">
-	<div>
-		<img src="images/slider-image-sm-1.jpg" alt="">
-	</div>
-	<div>
-		<img src="images/slider-image.jpg" alt="">
+<section>
+	<div class="main-width">
+		<div class="row">
+			<div class="slider responsive slider-style">
+				<div class="slider-block">
+					<img src="images/slider-carousel-image.jpg" alt="">
+				</div>
+				<div class="slider-block">
+					<img src="images/slider-carousel-image.jpg" alt="">
+				</div>
+				<div class="slider-block">
+					<img src="images/slider-carousel-image.jpg" alt="">
+				</div>
+				<div class="slider-block">
+					<img src="images/slider-carousel-image.jpg" alt="">
+				</div>
+				<div class="slider-block">
+					<img src="images/slider-carousel-image.jpg" alt="">
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 <script type="text/javascript">
@@ -98,19 +170,54 @@
        $('.slider-for').slick({
 		  slidesToShow: 1,
 		  slidesToScroll: 1,
-		  arrows: false,
+		  arrows: true,
 		  fade: true,
 		  asNavFor: '.slider-nav'
+
 		});
 		$('.slider-nav').slick({
-		  slidesToShow: 3,
+		  slidesToShow: 5,
 		  slidesToScroll: 1,
 		  asNavFor: '.slider-for',
-		  dots: true,
-		  centerMode: true,
+		  dots: false,
 		  focusOnSelect: true
 		});
     });
+    $('.responsive').slick({
+	  dots: true,
+	  infinite: false,
+	  speed: 300,
+	  slidesToShow: 4,
+	  slidesToScroll: 4,
+	  responsive: [
+	    {
+	      breakpoint: 1024,
+	      settings: {
+	        slidesToShow: 3,
+	        slidesToScroll: 3,
+	        infinite: true,
+	        dots: true
+	      }
+	    },
+	    {
+	      breakpoint: 600,
+	      settings: {
+	        slidesToShow: 2,
+	        slidesToScroll: 2
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        slidesToShow: 1,
+	        slidesToScroll: 1
+	      }
+	    }
+	    // You can unslick at a given breakpoint now by adding:
+	    // settings: "unslick"
+	    // instead of a settings object
+	  ]
+	});
  </script>
 </body>
 </html>
