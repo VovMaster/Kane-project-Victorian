@@ -1,6 +1,53 @@
+.slider-full-width{
+	img{
+		width: 100%;
+	}
+	.slick-dots{
+		right: 46px;
+    	bottom: 27px;
+    	position: absolute;
+	}
+}
 .slider-nav{
-	> div{
-		width: 110px;
+	.slick-list{
+		margin: 8px -2.5px;
+	}
+	.slick-slide{
+		padding: 0 2.5px;
+	}
+	.slick-prev{
+		left: -35px;
+	}
+	.slick-next{
+		right: -35px;
+	}
+	.slick-arrow{
 		height: 110px;
+	}
+}
+.slider-quote{
+	.slick-arrow{
+		top: 0;
+	}
+}
+.slider-style{
+
+}
+.slider-block{
+	padding: 60px 15px 79px;
+	height: 320px;
+	overflow: hidden;
+	img{
+		.scale(@scaleX: 1.2, @scaleY: 1.1);
+
+		
+	}
+	&:hover{
+		overflow: visible;
+		padding: 0px 15px 0px;
+		height: 420px;
+		img{
+			.scale(@scaleX: 1.1, @scaleY: 1.1);
+		}
 	}
 }
