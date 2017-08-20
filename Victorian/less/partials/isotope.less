@@ -1,0 +1,40 @@
+.grid {
+  margin-left: -0.38%;
+  margin-right: -0.38%;
+  > div {
+    padding: 0.38%;
+    width: 33.3%;
+  }
+  .grid-big {
+      width: 66.6%;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.filter-button-group {
+  text-align: center;
+  margin-bottom: 36px;
+  button {
+    font-size: 14px;
+    line-height: 22px;
+    display: inline-block;
+    padding: 4px 16px;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    letter-spacing: 0.4px;
+    color: #969696;
+    text-transform: uppercase;
+    border-radius: 15px;
+    &:not(.is-checked):hover {
+      color: #242424;
+    }
+  }
+  .is-checked {
+    background: #cd3434;
+    color: #fff;  
+  }
+  
+}

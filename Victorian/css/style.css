@@ -3702,6 +3702,44 @@ ol {
   color: #fff;
   font-size: 14px;
 }
+.grid {
+  margin-left: -0.38%;
+  margin-right: -0.38%;
+}
+.grid > div {
+  padding: 0.38%;
+  width: 33.3%;
+}
+.grid .grid-big {
+  width: 66.6%;
+}
+.grid img {
+  width: 100%;
+}
+.filter-button-group {
+  text-align: center;
+  margin-bottom: 36px;
+}
+.filter-button-group button {
+  font-size: 14px;
+  line-height: 22px;
+  display: inline-block;
+  padding: 4px 16px;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  letter-spacing: 0.4px;
+  color: #969696;
+  text-transform: uppercase;
+  border-radius: 15px;
+}
+.filter-button-group button:not(.is-checked):hover {
+  color: #242424;
+}
+.filter-button-group .is-checked {
+  background: #cd3434;
+  color: #fff;
+}
 /* Slider */
 .slick-slider {
   text-align: center;
@@ -4052,6 +4090,11 @@ ol {
 html,
 body {
   height: 100%;
+}
+button,
+a,
+input {
+  outline: none;
 }
 .main-width {
   max-width: 1280px;
