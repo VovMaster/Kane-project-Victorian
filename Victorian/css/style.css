@@ -3941,11 +3941,46 @@ ol {
   bottom: 27px;
   position: absolute;
 }
+.slider-image-style {
+  background-image: -moz-linear-gradient(-135deg, #f7c956, #fef4af 32%, #f7c956);
+  background-image: -webkit-linear-gradient(-135deg, #f7c956, #fef4af 32%, #f7c956);
+  background-image: -o-linear-gradient(-135deg, #f7c956, #fef4af 32%, #f7c956);
+  background-image: -ms-linear-gradient(-135deg, #f7c956, #fef4af 32%, #f7c956);
+  background-image: linear-gradient(225deg, #f7c956, #fef4af 32%, #f7c956);
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.slider-image-style:after {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.slider-image-style:hover:after {
+  opacity: 0;
+}
 .slider-nav .slick-list {
   margin: 8px -2.5px;
 }
 .slider-nav .slick-slide {
   padding: 0 2.5px;
+  /*&.slick-current{
+
+		}*/
 }
 .slider-nav .slick-prev {
   left: -35px;
@@ -3956,6 +3991,16 @@ ol {
 .slider-nav .slick-arrow {
   height: 110px;
 }
+.slider-nav .slick-current .slider-image-style > div {
+  margin: 4px;
+  overflow: hidden;
+}
+.slider-nav .slick-current .slider-image-style > div > div {
+  margin: -4px;
+}
+.slider-nav .slick-current .slider-image-style:after {
+  opacity: 0;
+}
 .slider-quote .slick-arrow {
   top: 0;
 }
@@ -3964,20 +4009,10 @@ ol {
   height: 320px;
   overflow: hidden;
 }
-.slider-block img {
-  -ms-transform: scale(1.2, 1.1);
-  -webkit-transform: scale(1.2, 1.1);
-  transform: scale(1.2, 1.1);
-}
 .slider-block:hover {
   overflow: visible;
   padding: 0px 15px 0px;
   height: 420px;
-}
-.slider-block:hover img {
-  -ms-transform: scale(1.1, 1.1);
-  -webkit-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
 }
 .main-header {
   background: #fff;
