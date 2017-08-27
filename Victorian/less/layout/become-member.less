@@ -1,0 +1,69 @@
+.become-member {
+	height: 238px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 50%;
+	position: relative;
+}
+.become-member-text {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	right: 50%;
+	margin-right: 147px;
+	height: 100%;
+	overflow: hidden;
+	z-index: 3;
+	color: #cccccc;
+	h4 {
+		color: #fff;
+		font-family: 'Playfair Display';
+		font-size: 32px;
+		line-height: 32px;
+		margin: 0;
+		letter-spacing: 1.6px;
+	}
+	p {
+		font-size: 32px;
+		font-family: 'Playfair Display';
+		font-style: italic;
+		margin: 0;
+		letter-spacing: 0;
+	}
+	&:after {
+		content: " ";
+		display: block;
+		background-color: rgba(0, 0, 0, 0.8);
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		.skewX(16.5deg);
+		-webkit-transform-origin: 0 100% 0;
+		-moz-transform-origin: 0 100% 0;
+		transform-origin: 0 100% 0;
+	}
+	> div {
+		position: absolute;
+		width: 438px;
+		top: 0;
+		right: 0;
+		height: 100%;
+		padding-top: 82px;
+		z-index: 4;
+	}
+}
+.become-member2 {
+	.become-member-text {
+		margin-right: 114px;
+		> div {
+			width: 470px;
+		}
+	}
+	.email-form {
+	    margin-left: -13px;
+	    top: 130px;
+	}
+}

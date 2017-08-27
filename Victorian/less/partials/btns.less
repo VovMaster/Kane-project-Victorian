@@ -42,8 +42,27 @@
   padding: 16px 57px 17px;
 }
 
+.btn-circle-small {
+  border-radius: 40px;
+  border: none;
+  padding: 11px 30px;
+}
+
+.btn-bottom {
+  width: 100%;
+  padding: 16px;
+  border-radius: 0 0 5px 5px;
+  .fa {
+    margin-left: 6px;
+  }
+}
+
 .btn-primary {
   .btn-mixin(@btn-bg-primary, @btn-color-primary, @btn-border-primary, @btn-bg-hover-primary, @btn-color-hover-primary, @btn-border-hover-primary);
+}
+.btn-secondary {
+ .gradient3(225deg, #f7c956, #fef4af 32%, #f7c956); 
+ color: #ae8927;
 }
 
 
@@ -67,3 +86,4 @@
   background-image: none;
   outline: 0;
 }
+

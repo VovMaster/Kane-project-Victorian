@@ -10,6 +10,13 @@
   -ms-transition: all @transition @effect_transition @pause_transition;
   transition: all @transition @effect_transition @pause_transition;
 }
+.transform-origin(@transform-origin){
+  -webkit-transform-origin: @transform-origin;
+  -moz-transform-origin: @transform-origin;
+  -o-transform-origin: @transform-origin;
+  -ms-transform-origin: @transform-origin;
+  transform-origin: @transform-origin;
+}
 .rotate(@rotate_angle: 10deg){
  	-ms-transform: rotate(@rotate_angle);
     -webkit-transform: rotate(@rotate_angle);
@@ -24,6 +31,16 @@
     -ms-transform: skew( @skewX , @skewY );
     -webkit-transform: skew( @skewX , @skewY );
     transform: skew( @skewX , @skewY );
+}
+.skewX(@skewX: 30deg){
+    -ms-transform: skewX( @skewX );
+    -webkit-transform: skewX( @skewX );
+    transform: skewX( @skewX );
+}
+.skewY(@skewY: 20deg){
+    -ms-transform: skewY( @skewY );
+    -webkit-transform: skewY( @skewY );
+    transform: skewY( @skewY );
 }
 .gradient(@gradient_angle: 90deg, @gradient_color1: rgb(99, 179, 233) 0%, @gradient_color2: rgb(99, 179, 233) 100%){
   background-image: -moz-linear-gradient( 90 - @gradient_angle , @gradient_color1, @gradient_color2 );

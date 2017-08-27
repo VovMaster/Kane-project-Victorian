@@ -81,3 +81,60 @@
   }
 }
 
+
+
+.email-form {
+  width: 400px;
+  position: absolute;
+  top: 108px;
+  left: 50%;
+  margin-left: -99px;
+  z-index: 7;
+  .form-control {
+    padding-left: 25px;
+    height: 50px;
+    padding-right: 25px;
+  }
+  .form-control {
+    border-color: transparent;
+    background-color: rgba(255, 255, 255, 0.5);
+    &:focus {
+      border-color: #f7c956;
+      background: #fff;
+    }
+  }
+  *::-webkit-input-placeholder { 
+    color: #545454;
+  }
+  *::-moz-placeholder { 
+    color: #545454;
+  }
+  *:-ms-input-placeholder { 
+    color: #545454;
+  }
+  *:-moz-placeholder {
+    color: #545454;
+  }
+  button {
+    height: 50px;
+    width: 130px;
+    background: #ea2f2f;
+    border-radius: 0 3px 3px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    color: #ae8927;
+    .gradient3(225deg, #f7c956, #fef4af 32%, #f7c956);
+  }
+  .fa {
+    color: #ae8927;
+    font-size: 14px;
+    margin: 0 3px;
+  }
+}
