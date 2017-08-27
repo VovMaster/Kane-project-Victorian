@@ -3570,6 +3570,14 @@ ol {
   padding-left: 7px;
   padding-right: 7px;
 }
+.row-10 {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.row-10 > * {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .btn {
   font-family: 'Roboto';
   display: inline-block;
