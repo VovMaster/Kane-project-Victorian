@@ -472,3 +472,313 @@
 		margin: 0 0 18px 0;
 	}
 }
+
+.block-style {
+	background: #fafafa;
+	font-size: 14px;
+	padding: 9px 7px;
+	> * {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+.decoration-title {
+	color: #000;
+	text-decoration: underline;
+}
+
+.note {
+	background: #333333;
+	color: #fefefe;
+	font-size: 14px;
+	padding: 20px 19px;
+	line-height: 16px;
+	overflow: hidden;
+	margin-bottom: 38px;
+	border-radius: 0 0 3px 3px;
+	*:last-child {
+		margin-bottom: 0;
+	}
+	b {
+		font-weight: 900;
+	}
+}
+.note-left {
+	float: left;
+	width: 48px;
+}
+.note-right {
+	margin-left: 48px;
+}
+
+.brands {
+	*:last-child {
+		margin-right: 0;
+	}
+	> div {
+		display: inline-block;
+		margin-bottom: 10px;
+		margin-right: 20px;
+	}
+}
+.form-step {
+	position: relative;
+	> *:last-child {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	.section-three-type-number {
+		left: -60px;
+		top: 110px;
+	}
+}
+.form-wrap {
+ padding: 7px 82px 0 68px;
+}
+.wrap-form-group {
+	padding-bottom: 40px;
+	> *:last-child {
+		margin-bottom: 0;
+	}
+	.row:last-child {
+		.form-group:last-child {
+			margin-bottom: 0;
+		}
+	}
+	img {
+		margin: 0;
+	}
+}
+.mastercard {
+	color: #000;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+.wrap-label {
+	padding-right: 200px;
+	padding-top: 10px;
+	h4 {
+		font-size: 20px;
+		line-height: 1.25;
+		font-weight: 400;
+		letter-spacing: 0.5px;
+		margin: 0;
+	}
+}
+
+.checkbox-wrap {
+	overflow: hidden;
+	display: inline-block;
+	margin-right: 24px;
+	&:last-child {
+		margin-right: 0;
+	}
+	b {
+		font-weight: 900;
+	}
+	input {
+		display: none;
+		&:checked {
+			~ .checkbox {
+				background: #cd3434;
+				border-color: #cd3434;
+				.fa {
+					opacity: 1;
+				}
+			}
+			~ span {
+				color: #333333;
+			}
+		}
+	}
+	img {
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 18px;
+	}
+}
+.checkbox {
+	border: 1px solid #959595;
+	border-radius: 2px;
+	height: 13px;
+	width: 13px;
+	position: relative;
+	float: left;
+	margin: 5px 10px 5px 0;
+	.fa {
+		opacity: 0;
+		font-size: 11px;
+		top: 0;
+		left: 0;
+		position: absolute;
+		color: #fff;
+	}
+}
+
+.answer-wrap {
+	margin-top: -5px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	.checkbox-wrap {
+		float: left;
+		margin-left: 25px;
+		margin-right: 0;
+	}
+}
+.form-step {
+	border-bottom: 1px solid #e1e1e1;
+	padding: 39px 0;
+	&:last-child {
+		border: none;
+	}
+}
+.plus-input {
+  height: 30px;
+  width: 30px;
+  line-height: 29px;
+  text-align: center;
+  cursor: pointer;
+  background: #bababa;
+  border-radius: 100%;
+  position: absolute;
+  top: 5px;
+  right: -12px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  .transition(0.2s);
+  letter-spacing: -1px;
+  &:hover {
+    background: #cd3434;
+  }
+}
+.title-small-wrap {
+  overflow: hidden;
+  margin-bottom: 28px;
+  .title-small {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 15px;
+    color: #bababa;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+}
+.form-group-position {
+	padding-right: 204px;
+	.plus-input {
+		float: left;
+		margin: -3px -12px -3px 30px;
+		position: relative;
+		right: 0;
+		top: 0;
+	}
+	.answer-wrap {
+		margin-top: -14px;
+	}
+}
+
+.form-group-position2 {
+	padding-right: 254px;
+	.plus-input {
+		margin-left: 19px;
+	}
+	.checkbox-wrap {
+		margin-left: 19px;
+	}
+}
+
+.form-group-width-icon {
+	.form-control {
+		padding-left: 42px;
+	}
+	.fa {
+		font-size: 14px;
+		color: rgba(133, 133, 133, 0.5);
+		left: 14px;
+		position: absolute;
+		top: 13px;
+	}
+}
+.checkbox-wrap-text {
+	font-size: 14px;
+	a {
+		color: #ea2f2f;
+	}
+	.checkbox {
+		margin-top: 4px;
+		margin-bottom: 3px;
+	}
+	&:first-child {
+		margin-left: 0;
+	}
+}
+.sidebar-group {
+	padding-top: 46px;
+}
+.edit-cart-wrap {
+	position: relative;
+	.title-small {
+		padding-right: 50px;
+	}
+}
+
+.edit-cart {
+	position: absolute;
+	right: 16px;
+	top: 49px;
+	font-size: 15px;
+	color: #cd3434;
+	font-weight: 700;
+	&:hover, &:focus {
+		color: #cd3434;
+	}
+}
+
+.table-li {
+	li {
+		display: table;
+		width: 100%;
+		> div {
+			display: table-cell;
+			padding: 5px 9px;
+		}
+		&:after {
+			left: -8px;
+			top: 14px;
+			background: #000;
+		}
+	}
+	a {
+		color: #000;
+	}
+}
+
+.note-column {
+	position: relative;
+	overflow: hidden;
+	> div {
+		float: left;
+		padding: 2px 0;
+		width: 50%;
+		&:last-child {
+			text-align: right;
+		}
+	}
+	&:after {
+		content: " ";
+		display: block;
+		top: 50%;
+		left: 50%;
+		margin-top: -10px;
+		height: 20px;
+		width: 1px;
+		background: #797979;
+		position: absolute;
+	}
+}
