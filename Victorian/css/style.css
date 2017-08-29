@@ -5716,6 +5716,18 @@ img {
   background: #797979;
   position: absolute;
 }
+#map {
+  height: 422px;
+}
+#map .gm-style-mtc {
+  display: none;
+}
+#map .gmnoprint {
+  display: none;
+}
+#map .gm-style-cc {
+  display: none;
+}
 .main-footer {
   background-image: url(../images/footer.jpg);
   background-repeat: no-repeat;
