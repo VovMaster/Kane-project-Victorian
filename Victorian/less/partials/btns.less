@@ -35,6 +35,18 @@
   outline: none !important;
   .btn-mixin(@btn-bg-default, @btn-color-default, @btn-border-default, @btn-bg-hover-default, @btn-color-hover-default, @btn-border-hover-default);
 }
+
+.btn-primary {
+  .btn-mixin(@btn-bg-primary, @btn-color-primary, @btn-border-primary, @btn-bg-hover-primary, @btn-color-hover-primary, @btn-border-hover-primary);
+}
+.btn-secondary {
+  border: none;
+  padding: 11px 22px;
+ .gradient3(225deg, #f7c956, #fef4af 32%, #f7c956); 
+ color: #ae8927;
+}
+
+
 .btn-circle {
   letter-spacing: 0.7px;
   box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.15);
@@ -55,15 +67,11 @@
   .fa {
     margin-left: 6px;
   }
+  &.btn-secondary {
+    padding: 18px;
+  }
 }
 
-.btn-primary {
-  .btn-mixin(@btn-bg-primary, @btn-color-primary, @btn-border-primary, @btn-bg-hover-primary, @btn-color-hover-primary, @btn-border-hover-primary);
-}
-.btn-secondary {
- .gradient3(225deg, #f7c956, #fef4af 32%, #f7c956); 
- color: #ae8927;
-}
 
 
 .btn:focus,

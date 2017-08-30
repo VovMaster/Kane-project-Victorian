@@ -152,3 +152,30 @@ select.form-control {
   appearance:none;
 }
 
+textarea.form-control {
+  height: 128px;
+  resize: none;
+}
+
+.contact-form {
+  .form-group {
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .form-control {
+    border-color: transparent;
+    &:focus {
+      border-color: #f7c956;
+      background: #fff;
+    }
+  }
+  .btn {
+    min-width: 170px;
+    .fa {
+      margin-left: -10px;
+      margin-right: 5px;
+    }
+  }
+}
