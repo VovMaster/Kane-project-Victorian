@@ -126,6 +126,39 @@ $(document).ready(function(){
 	  ]
 
 	});
+
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 75, 425 ],
+    });
+
+
+    $( "#slider-range2" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 350, 480 ],
+    });
+
+    $( "#slider-range3" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 75, 425 ],
+    });
+
+
+    $( "#slider-range4" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 350, 480 ],
+    });
+
+
+
 });
 
 

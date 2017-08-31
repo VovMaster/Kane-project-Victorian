@@ -115,22 +115,23 @@ p, ul, ol {
     }
     > a {
       text-decoration: none;
-      &:hover {
-        color: #ea2f2f;
-        &:after {
-          content: " ";
-          display: block;
-          height: 4px;
-          width: 4px;
-          background: #ea2f2f;
-          border-radius: 100%;
-          position: absolute;
-          top: 9px;
-          left: -17px;
-          z-index: 2;
-        }
+    }
+    > a:hover, &.active > a {
+      color: #ea2f2f;
+      &:after {
+        content: " ";
+        display: block;
+        height: 4px;
+        width: 4px;
+        background: #ea2f2f;
+        border-radius: 100%;
+        position: absolute;
+        top: 9px;
+        left: -17px;
+        z-index: 2;
       }
     }
+
   }
 }
 
@@ -185,6 +186,27 @@ p, ul, ol {
     &:after {
       font-family: "FontAwesome";
       content: @fa-var-angle-right;
+      display: block;
+      position: absolute;
+      top: 0px;
+      font-size: 14px;
+      left: -18px;
+      z-index: 1;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.ul-style-step {
+  padding-left: 18px;
+  list-style: none;
+  li {
+    position: relative;
+    margin-bottom: 10px;
+    &:after {
+      font-family: "FontAwesome";
+      content: @fa-var-arrow-circle-o-right;  
       display: block;
       position: absolute;
       top: 0px;
