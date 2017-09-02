@@ -199,24 +199,28 @@ p, ul, ol {
   }
 }
 .ul-style-step {
-  padding-left: 18px;
+  padding-left: 25px;
   list-style: none;
   li {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     &:after {
       font-family: "FontAwesome";
       content: @fa-var-arrow-circle-o-right;  
       display: block;
+      color: #ea2f2f;
       position: absolute;
-      top: 0px;
-      font-size: 14px;
-      left: -18px;
+      top: -1px;
+      font-size: 16px;
+      left: -23px;
       z-index: 1;
     }
     &:last-child {
       margin-bottom: 0;
     }
+  }
+  i {
+    color: #bababa;
   }
 }
 .ul-style-check {
