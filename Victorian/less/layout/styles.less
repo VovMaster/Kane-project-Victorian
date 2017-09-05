@@ -1573,3 +1573,159 @@
 .category-block-wrap {
 	margin-bottom: 60px;
 }
+.wrap-modal {
+	background-color: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9999;
+	text-align: center;
+	display: none;
+	&:after {
+		content: " ";
+		height: 100%;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+.modal {
+	background-color: #fff;
+	width: 570px;
+	max-width: 100%;
+	padding: 60px 100px 22px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	position: relative;
+	.title-primary {
+		text-align: left;
+		letter-spacing: 1px;
+		margin-bottom: 63px;
+	}
+	.form-control {
+		font-size: 16px;
+		padding: 8px 20px;
+		height: 50px;
+	}
+	.form-group {
+		margin-bottom: 10px;
+	}
+	.btn {
+		margin-bottom: 6px;
+	}
+}
+
+.modal-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 54px;
+	font-size: 32px;
+	color: #59440d;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 47px;
+	width: 54px;
+	font-weight: 300;
+	cursor: pointer;
+	.gradient3(225deg, #f7c956, #fef4af 32%, #f7c956);
+}
+.forgot-you-password {
+	margin-bottom: 17px;
+	margin-top: -8px;
+	font-size: 14px;
+	font-style: italic;
+	a {
+		color: #959595;
+	}
+}
+
+.footer-modal {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: 20px;
+	font-weight: 300;
+	color: #333333;
+	text-align: center;
+	margin-top: 39px;
+	padding-top: 20px;
+	a {
+		font-weight: 400;
+		color: #cd3434;
+	}
+}
+.show-modal {
+	display: block;
+}
+
+.title-cart-dropdown {
+	padding-bottom: 16px;
+}
+
+.cart-dropdown-content {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background-color: rgba(24, 24, 24, 0.95);
+	width: 296px;
+	padding: 11px 15px 8px;
+	z-index: 9;
+	.btn {
+		margin-bottom: 7px;
+	}
+}
+
+.product-cart-img {
+	float: left;
+	width: 70px;
+	img {
+		width: 100%;
+		border-radius: 3px;
+	}
+}
+.product-cart-content {
+	margin-left: 83px;
+	margin-right: 35px;
+	color: #959595;
+	font-size: 14px;
+	h5 {
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #fff;
+		letter-spacing: 0.4px;
+		margin: 6px 0 1px;
+	}
+	p {
+		margin-bottom: 0px;
+	}
+}
+.product-cart-sum {
+	font-size: 16px;
+	font-weight: 900;
+	color: #cd3030;
+}
+.product-cart {
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 14px;
+}
+.product-cart-remove {
+	position: absolute;
+	top: 15px;
+	right: -8px;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+}
+.product-cart-total {
+	padding-top: 10px;
+	border-top: 1px solid #363636;
+	margin-top: 18px;
+	margin-bottom: 17px;
+	padding-top: 14px;
+}

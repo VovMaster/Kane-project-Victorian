@@ -19,6 +19,16 @@ $(document).ready(function(){
 	}, 300);
 
 
+    $('[data-modal]').click(function(){
+    	var hreModal = $(this).attr('href');
+    	$('.wrap-modal').removeClass('show-modal');
+    	$(hreModal).addClass('show-modal');
+    	return false
+    });
+
+    $('.modal-close').click(function(){
+    	$('.wrap-modal').removeClass('show-modal');
+    });
 
 
 	$('.fade').slick({
