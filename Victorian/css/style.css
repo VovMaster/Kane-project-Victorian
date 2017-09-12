@@ -6941,6 +6941,11 @@ img {
     padding: 0 20px;
   }
 }
+@media (max-width: 1100px) {
+  .showrooms-hover {
+    padding: 10px 15px;
+  }
+}
 @media (max-width: 1000px) {
   .main-header-top {
     font-size: 12px;
@@ -6970,6 +6975,12 @@ img {
   .slider-blocks-wrap {
     margin-left: 5px;
     margin-right: 5px;
+  }
+  .showrooms-hover h6 {
+    font-size: 18px;
+  }
+  .showrooms-hover p {
+    font-size: 12px;
   }
 }
 @media (min-width: 768px) {
@@ -7204,6 +7215,31 @@ img {
   }
   .become-member-text {
     max-width: 100%;
+  }
+  .grid > div {
+    width: 50%;
+  }
+  .grid .grid-big {
+    width: 100%;
+  }
+  .showrooms-hover p {
+    font-size: 10px;
+  }
+  .showrooms-hover h6 {
+    font-size: 10px;
+    margin: 0 0 5px 0;
+  }
+  .showrooms-plus {
+    height: 50px;
+    width: 50px;
+  }
+  .showrooms-plus:after {
+    border-right-width: 50px;
+    border-top-width: 50px;
+  }
+  .showrooms-plus .fa {
+    bottom: 10px;
+    right: 10px;
   }
 }
 @media (max-width: 359px) {
